@@ -1,0 +1,274 @@
+[
+    {
+        "Id": "eeed9bb3c0f2f71325486f64ea7a291e83fdfe599e892b144d1706c8d3581033",
+        "Created": "2026-07-07T16:13:59.476768162Z",
+        "Path": "/docker-entrypoint.sh",
+        "Args": [
+            "nginx",
+            "-g",
+            "daemon off;"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 81708,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-07-07T16:17:59.954552089Z",
+            "FinishedAt": "2026-07-07T16:17:59.833300724Z",
+            "Health": {
+                "Status": "unhealthy",
+                "FailingStreak": 43,
+                "Log": [
+                    {
+                        "Start": "2026-07-07T16:37:07.32125395Z",
+                        "End": "2026-07-07T16:37:07.379503545Z",
+                        "ExitCode": 1,
+                        "Output": "wget: can't connect to remote host: Connection refused\n"
+                    },
+                    {
+                        "Start": "2026-07-07T16:37:37.380549605Z",
+                        "End": "2026-07-07T16:37:37.44086605Z",
+                        "ExitCode": 1,
+                        "Output": "wget: can't connect to remote host: Connection refused\n"
+                    },
+                    {
+                        "Start": "2026-07-07T16:38:07.441494807Z",
+                        "End": "2026-07-07T16:38:07.50108402Z",
+                        "ExitCode": 1,
+                        "Output": "wget: can't connect to remote host: Connection refused\n"
+                    },
+                    {
+                        "Start": "2026-07-07T16:38:37.50183995Z",
+                        "End": "2026-07-07T16:38:37.561926421Z",
+                        "ExitCode": 1,
+                        "Output": "wget: can't connect to remote host: Connection refused\n"
+                    },
+                    {
+                        "Start": "2026-07-07T16:39:07.563388566Z",
+                        "End": "2026-07-07T16:39:07.62192272Z",
+                        "ExitCode": 1,
+                        "Output": "wget: can't connect to remote host: Connection refused\n"
+                    }
+                ]
+            }
+        },
+        "Image": "sha256:fd5a80cfd51739483e0b58367abc308c448a851a548179b1c98f6b6992d9b327",
+        "ResolvConfPath": "/var/lib/docker/containers/eeed9bb3c0f2f71325486f64ea7a291e83fdfe599e892b144d1706c8d3581033/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/eeed9bb3c0f2f71325486f64ea7a291e83fdfe599e892b144d1706c8d3581033/hostname",
+        "HostsPath": "/var/lib/docker/containers/eeed9bb3c0f2f71325486f64ea7a291e83fdfe599e892b144d1706c8d3581033/hosts",
+        "LogPath": "/var/lib/docker/containers/eeed9bb3c0f2f71325486f64ea7a291e83fdfe599e892b144d1706c8d3581033/eeed9bb3c0f2f71325486f64ea7a291e83fdfe599e892b144d1706c8d3581033-json.log",
+        "Name": "/my-custom-server",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "bridge",
+            "PortBindings": {
+                "80/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "8000"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                40,
+                88
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": [],
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "eeed9bb3c0f2",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "80/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "NGINX_VERSION=1.31.2",
+                "PKG_RELEASE=1",
+                "DYNPKG_RELEASE=1",
+                "NJS_VERSION=0.9.9",
+                "NJS_RELEASE=1",
+                "ACME_VERSION=0.4.1"
+            ],
+            "Cmd": [
+                "nginx",
+                "-g",
+                "daemon off;"
+            ],
+            "Healthcheck": {
+                "Test": [
+                    "CMD-SHELL",
+                    "wget --quiet --tries=1 --spider http://localhost/ || exit 1"
+                ],
+                "Interval": 30000000000,
+                "Timeout": 3000000000,
+                "StartPeriod": 5000000000,
+                "Retries": 3
+            },
+            "Image": "horizontechx-web-server:1.0",
+            "Volumes": null,
+            "WorkingDir": "/usr/share/nginx/html",
+            "Entrypoint": [
+                "/docker-entrypoint.sh"
+            ],
+            "Labels": {
+                "maintainer": "NGINX Docker Maintainers <docker-maint@nginx.com>"
+            },
+            "StopSignal": "SIGQUIT"
+        },
+        "NetworkSettings": {
+            "SandboxID": "799f7ddac133c81366fe59f9f6f1221bdf00e05c49c3b073ec6d317d1877cad9",
+            "SandboxKey": "/var/run/docker/netns/799f7ddac133",
+            "Ports": {
+                "80/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "8000"
+                    },
+                    {
+                        "HostIp": "::",
+                        "HostPort": "8000"
+                    }
+                ]
+            },
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "40cb76aab12d9b892b9cdc0a920242fb90f64236d6b7ced9e3312297b3c140a5",
+                    "EndpointID": "9a8e59f7df7d9f9300317e2f744e61d6afa991bdea9922bda48c42d2b8225d8e",
+                    "Gateway": "172.17.0.1",
+                    "IPAddress": "172.17.0.2",
+                    "MacAddress": "a2:4e:14:a3:67:e8",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": null
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:fd5a80cfd51739483e0b58367abc308c448a851a548179b1c98f6b6992d9b327",
+            "size": 2482,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    }
+]

@@ -1,0 +1,103 @@
+
+cat > app/index.html <<'EOF'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker Web Server - HorizonTechX</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            max-width: 800px;
+            text-align: center;
+        }
+        h1 {
+            color: #667eea;
+            margin: 0 0 20px 0;
+        }
+        .status {
+            background: #f0f4ff;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .info-box {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #667eea;
+        }
+        .info-box strong {
+            color: #667eea;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🐳 Docker Web Server</h1>
+        <h2>HorizonTechX DevOps Project</h2>
+        
+        <div class="status">
+            <h3>✅ Container Status: RUNNING</h3>
+            <p>This web server is running inside a Docker container!</p>
+        </div>
+        
+        <div class="info-grid">
+            <div class="info-box">
+                <strong>Container ID:</strong><br>
+                <code id="hostname">Loading...</code>
+            </div>
+            <div class="info-box">
+                <strong>Server Time:</strong><br>
+                <code id="time">Loading...</code>
+            </div>
+            <div class="info-box">
+                <strong>Environment:</strong><br>
+                <code>Docker Container</code>
+            </div>
+            <div class="info-box">
+                <strong>Status:</strong><br>
+                <code style="color: green;">✓ Healthy</code>
+            </div>
+        </div>
+        
+        <h3>📚 Docker Concepts Demonstrated:</h3>
+        <ul style="text-align: left;">
+            <li><strong>Containerization:</strong> App runs in isolated container</li>
+            <li><strong>Portability:</strong> Same container runs anywhere Docker is installed</li>
+            <li><strong>Resource Isolation:</strong> Container has own filesystem, network, processes</li>
+            <li><strong>Scalability:</strong> Multiple instances can run simultaneously</li>
+            <li><strong>Microservices:</strong> Each container serves single purpose</li>
+        </ul>
+        
+        <hr>
+        <p><strong>Internship Task:</strong> TASK 4 - Web Server using Docker</p>
+        <p>Organization: <strong>Horizon TechX</strong></p>
+    </div>
+    
+    <script>
+        document.getElementById('hostname').textContent = window.location.hostname;
+        document.getElementById('time').textContent = new Date().toLocaleString();
+    </script>
+</body>
+</html>
